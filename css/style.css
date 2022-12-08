@@ -498,6 +498,7 @@ html {
   /* height: 25rem; */
   width: 12rem;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .trending_card:hover {
@@ -699,5 +700,13 @@ html {
 
   .nav_bar ul li a {
     margin-bottom: 12px;
+  }
+
+  .trending_card {
+    width: 6rem;
+  }
+
+  .special {
+    width: 5rem;
   }
 }
