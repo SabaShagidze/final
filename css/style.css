@@ -347,6 +347,11 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 4px var(--main-gray);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.award_inner:hover {
+  box-shadow: 0 0 20px var(--main-red);
 }
 
 /* Special */
@@ -469,6 +474,9 @@ html {
 }
 
 /* New & Trending */
+.trending_text {
+  margin-bottom: 2rem;
+}
 .trending_text h2 {
   font-family: "Roboto";
   font-size: 22px;
@@ -487,7 +495,7 @@ html {
 }
 
 .trending_card {
-  height: 25rem;
+  /* height: 25rem; */
   width: 12rem;
   transition: all 0.2s;
 }
@@ -509,17 +517,20 @@ html {
 }
 
 .trending_header {
+  font-family: "Roboto";
   font-size: 14px;
+  font-weight: bold;
 }
 
 .trending_card_text a {
   color: #fff;
   font-size: 18px;
   font-family: "Roboto";
+  transition: transform 0.5s ease-in-out;
 }
 
 .trending_card_text a:hover {
-  transform: rotateY(360deg);
+  transform: rotate(270deg);
 }
 
 /* Trending card images */
@@ -545,7 +556,7 @@ html {
       rgba(197, 19, 80, 0.5),
       rgba(249, 109, 0, 0.1)
     ),
-    url(../images/new/wtchr.jpg);
+    url(../images/new/eldn.webp);
 }
 .trending_four {
   background: linear-gradient(
@@ -553,7 +564,7 @@ html {
       rgba(197, 19, 80, 0.5),
       rgba(249, 109, 0, 0.1)
     ),
-    url(../images/new/wtchr.jpg);
+    url(../images/new/frcry.jpg);
 }
 .trending_five {
   background: linear-gradient(
@@ -561,7 +572,7 @@ html {
       rgba(197, 19, 80, 0.5),
       rgba(249, 109, 0, 0.1)
     ),
-    url(../images/new/wtchr.jpg);
+    url(../images/new/dstny.jpg);
 }
 
 .trending_img {
