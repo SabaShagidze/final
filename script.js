@@ -71,3 +71,14 @@ var containerEight = document.getElementById("card_image_container_eight");
 function change_img_eight(image) {
   containerEight.src = image.src;
 }
+
+// loader
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader_hidden");
+
+  loader.addEventListener("transitioned", () => {
+    document.body.removeChild("loader")
+  })
+})
