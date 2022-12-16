@@ -52,7 +52,7 @@ a,
 a:hover,
 a:visited,
 a:active {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
 }
 
