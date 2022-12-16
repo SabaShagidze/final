@@ -110,7 +110,21 @@ a:active {
   background-repeat: no-repeat;
   min-height: 700px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15rem;
+}
+
+.top_logo {
+  width: 20rem;
+  text-align: center;
+  font-size: 3rem;
+  border: 12px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  text-shadow: 0 0 3px #fff;
+  box-shadow: 0 0 3px #fff;
 }
 
 .top_nav {
@@ -796,6 +810,9 @@ a:active {
 }
 
 @media only screen and (max-width: 1328px) {
+  .top_logo {
+    display: none;
+  }
   .header {
     padding: 0 50px;
   }
