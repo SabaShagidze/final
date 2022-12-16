@@ -48,6 +48,14 @@ html {
   cursor: pointer;
 }
 
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 .hamburger {
   display: none;
 }
