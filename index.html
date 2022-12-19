@@ -1,374 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donte Game Store</title>
+    <!-- Main Style Css File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Reset Css File -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donte Game Store</title>
-  <!-- Main Style Css File -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Reset Css File -->
-  <link rel="stylesheet" href="css/reset.css" />
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <div class="full_container">
-    <div class="header">
-      <div class="logo"><a href="index.html">Donte</a></div>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <nav class="nav_bar">
-        <ul>
-          <li>
-            <i class="fa-solid fa-house"></i><a href="index.html" class=""> HOME</a>
-          </li>
-          <li><i class="fa-solid fa-shop"></i><a href="store.html"> STORE</a></li>
-          <li><i class="fa-solid fa-users"></i><a href=""> COMMUNITY</a></li>
-          <li><i class="fa-solid fa-user"></i><a href=""> PROFILE</a></li>
-          <li><i class="fa-solid fa-comments"></i> <a href="">CHAT</a></li>
-          <li><i class="fa-solid fa-phone"></i><a href=""> SUPPORT</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="main">
-      <div class="top_container">
-        <div class="top_nav">
-          <ul class="top_ul">
-            <li class="top_li"><a href="">Your Store</a></li>
-            <li class="top_li">
-              <a href="#featured">Featured & Recommended</a>
+  <body>
+    <div class="full_container">
+      <div class="header">
+        <div class="logo"><a href="index.html">Donte</a></div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav_bar">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i
+              ><a href="index.html" class=""> HOME</a>
             </li>
-            <li class="top_li"><a href="#special">Special Offers</a></li>
-            <li class="top_li"><a href="#trending">New & trending</a></li>
-            <li class="top_li"><a href="">News</a></li>
-            <li class="top_li"><a href="">Labs</a></li>
+            <li>
+              <i class="fa-solid fa-shop"></i><a href="store.html"> STORE</a>
+            </li>
+            <li><i class="fa-solid fa-users"></i><a href=""> COMMUNITY</a></li>
+            <li><i class="fa-solid fa-user"></i><a href=""> PROFILE</a></li>
+            <li><i class="fa-solid fa-comments"></i> <a href="">CHAT</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href=""> SUPPORT</a></li>
           </ul>
-          <input type="text" />
-        </div>
-        <div class="top_logo">
-          <h2>
-            <i class="fa-solid fa-gamepad fa-4x"></i>
-          </h2>
-        </div>
+        </nav>
       </div>
-      <div class="slideshow-container" id="featured">
-        <h2 class="headerone">Featured And Recommended</h2>
-        <!-- Full-width images with number and caption text -->
-        <!-- Card Slide 1 -->
-        <div class="mySlides fade">
-          <div class="product_card_container">
-            <div class="card_section_left">
-              <img src="images/cardslider/nomansky/nomanmain.jpg" alt="" class="card_main_image"
-                id="card_image_container_one" />
+      <div class="main">
+        <div class="top_container">
+          <div class="top_nav">
+            <ul class="top_ul">
+              <li class="top_li"><a href="">Your Store</a></li>
+              <li class="top_li">
+                <a href="#featured">Featured & Recommended</a>
+              </li>
+              <li class="top_li"><a href="#special">Special Offers</a></li>
+              <li class="top_li"><a href="#trending">New & trending</a></li>
+              <li class="top_li"><a href="">News</a></li>
+              <li class="top_li"><a href="">Labs</a></li>
+            </ul>
+            <input type="text" />
+          </div>
+          <div class="top_logo">
+            <h2>
+              <i class="fa-solid fa-gamepad fa-4x"></i>
+            </h2>
+          </div>
+        </div>
+        <!-- New And Trending -->
+        <div class="trending_container">
+          <div class="trending_text" id="trending">
+            <h2>New & trending</h2>
+          </div>
+          <div class="trending_row_one">
+            <div class="trending_card">
+              <div class="trending_img trending_one"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">The Witcher</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
-            <div class="card_section_right">
-              <div class="card_info">
-                <div class="product_name">
-                  <h2>No Mans Sky</h2>
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_one(this)" src="images/cardslider/nomansky/nomanmain.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_one(this)" src="images/cardslider/nomansky/nomanscreenone.png" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_one(this)" src="images/cardslider/nomansky/nomanscreentwo.webp" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_one(this)" src="images/cardslider/nomansky/nomanscreenthree.jpg" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="product_des">
-                  <p>Now Available.</p>
-                </div>
-                <div class="product_btn">
-                  <button class="btn">Add To Cart</button>
-                </div>
+            <div class="trending_card">
+              <div class="trending_img trending_two"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Cyberpunk 2077</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_three"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Elden Ring</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_four"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">FarCry 6</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_five"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Destiny 2</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_five"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Destiny 2</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trending_row_one">
+            <div class="trending_card">
+              <div class="trending_img trending_one"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">The Witcher</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_two"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Cyberpunk 2077</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_three"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Elden Ring</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_four"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">FarCry 6</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_five"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Destiny 2</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_five"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Destiny 2</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trending_row_one">
+            <div class="trending_card">
+              <div class="trending_img trending_one"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">The Witcher</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_two"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Cyberpunk 2077</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_three"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Elden Ring</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_four"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">FarCry 6</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_five"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Destiny 2</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_five"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Destiny 2</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trending_row_one">
+            <div class="trending_card">
+              <div class="trending_img trending_one"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">The Witcher</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_two"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Cyberpunk 2077</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_three"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Elden Ring</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_four"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">FarCry 6</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_five"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Destiny 2</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="trending_card">
+              <div class="trending_img trending_five"></div>
+              <div class="trending_card_text">
+                <p class="trending_header">Destiny 2</p>
+                <a href=""><i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Card Slide 2 -->
-        <div class="mySlides fade">
-          <div class="product_card_container">
-            <div class="card_section_left">
-              <img src="images/cardslider/forhonor/forhonormain.jpg" alt="" class="card_main_image"
-                id="card_image_container_two" />
-            </div>
-            <div class="card_section_right">
-              <div class="card_info">
-                <div class="product_name">
-                  <h2>For Honor</h2>
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_two(this)" src="images/cardslider/forhonor/forhonormain.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_two(this)" src="images/cardslider/forhonor/forhonorscreenone.jpg" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_two(this)" src="images/cardslider/forhonor/forhonorscreentwo.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_two(this)" src="images/cardslider/forhonor/forhonorscreenthree.webp"
-                    alt="" class="nav_image" />
-                </div>
-                <div class="product_des">
-                  <p>Available Now</p>
-                </div>
-                <div class="product_btn">
-                  <button class="btn">Add To Cart</button>
+        <div class="slideshow-container" id="featured">
+          <h2 class="headerone">Featured And Recommended</h2>
+          <!-- Full-width images with number and caption text -->
+          <!-- Card Slide 1 -->
+          <div class="mySlides fade">
+            <div class="product_card_container">
+              <div class="card_section_left">
+                <img
+                  src="images/cardslider/nomansky/nomanmain.jpg"
+                  alt=""
+                  class="card_main_image"
+                  id="card_image_container_one"
+                />
+              </div>
+              <div class="card_section_right">
+                <div class="card_info">
+                  <div class="product_name">
+                    <h2>No Mans Sky</h2>
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_one(this)"
+                      src="images/cardslider/nomansky/nomanmain.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_one(this)"
+                      src="images/cardslider/nomansky/nomanscreenone.png"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_one(this)"
+                      src="images/cardslider/nomansky/nomanscreentwo.webp"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_one(this)"
+                      src="images/cardslider/nomansky/nomanscreenthree.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="product_des">
+                    <p>Now Available.</p>
+                  </div>
+                  <div class="product_btn">
+                    <button class="btn">Add To Cart</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Card Slide 4 -->
-        <div class="mySlides fade">
-          <div class="product_card_container">
-            <div class="card_section_left">
-              <img src="images/cardslider/cod/codmain.jpg" alt="" class="card_main_image"
-                id="card_image_container_four" />
-            </div>
-            <div class="card_section_right">
-              <div class="card_info">
-                <div class="product_name">
-                  <h2>Call Of Duty: MW2</h2>
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_four(this)" src="images/cardslider/cod/codmain.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_four(this)" src="images/cardslider/cod/codscreenone.jpg" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_four(this)" src="images/cardslider/cod/codscreentwo.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_four(this)" src="images/cardslider/cod/codscreenthree.jpg" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="product_des">
-                  <p>Available Now</p>
-                </div>
-                <div class="product_btn">
-                  <button class="btn">Add To Cart</button>
+
+          <!-- Card Slide 2 -->
+          <div class="mySlides fade">
+            <div class="product_card_container">
+              <div class="card_section_left">
+                <img
+                  src="images/cardslider/forhonor/forhonormain.jpg"
+                  alt=""
+                  class="card_main_image"
+                  id="card_image_container_two"
+                />
+              </div>
+              <div class="card_section_right">
+                <div class="card_info">
+                  <div class="product_name">
+                    <h2>For Honor</h2>
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_two(this)"
+                      src="images/cardslider/forhonor/forhonormain.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_two(this)"
+                      src="images/cardslider/forhonor/forhonorscreenone.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_two(this)"
+                      src="images/cardslider/forhonor/forhonorscreentwo.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_two(this)"
+                      src="images/cardslider/forhonor/forhonorscreenthree.webp"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="product_des">
+                    <p>Available Now</p>
+                  </div>
+                  <div class="product_btn">
+                    <button class="btn">Add To Cart</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Card Slide 5 -->
-        <div class="mySlides fade">
-          <div class="product_card_container">
-            <div class="card_section_left">
-              <img src="images/cardslider/ac/acmain.jpg" alt="" class="card_main_image"
-                id="card_image_container_five" />
-            </div>
-            <div class="card_section_right">
-              <div class="card_info">
-                <div class="product_name">
-                  <h2>Assassins Creed: Valhalla</h2>
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_five(this)" src="images/cardslider/ac/acmain.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_five(this)" src="images/cardslider/ac/acscreenone.jpg" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_five(this)" src="images/cardslider/ac/acscreentwo.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_five(this)" src="images/cardslider/ac/acscreenthree.jpg" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="product_des">
-                  <p>Available Now</p>
-                </div>
-                <div class="product_btn">
-                  <button class="btn">Add To Cart</button>
+          <!-- Card Slide 4 -->
+          <div class="mySlides fade">
+            <div class="product_card_container">
+              <div class="card_section_left">
+                <img
+                  src="images/cardslider/cod/codmain.jpg"
+                  alt=""
+                  class="card_main_image"
+                  id="card_image_container_four"
+                />
+              </div>
+              <div class="card_section_right">
+                <div class="card_info">
+                  <div class="product_name">
+                    <h2>Call Of Duty: MW2</h2>
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_four(this)"
+                      src="images/cardslider/cod/codmain.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_four(this)"
+                      src="images/cardslider/cod/codscreenone.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_four(this)"
+                      src="images/cardslider/cod/codscreentwo.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_four(this)"
+                      src="images/cardslider/cod/codscreenthree.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="product_des">
+                    <p>Available Now</p>
+                  </div>
+                  <div class="product_btn">
+                    <button class="btn">Add To Cart</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card Slide 6 -->
-        <div class="mySlides fade">
-          <div class="product_card_container">
-            <div class="card_section_left">
-              <img src="images/cardslider/dota/dotamain.png" alt="" class="card_main_image"
-                id="card_image_container_six" />
-            </div>
-            <div class="card_section_right">
-              <div class="card_info">
-                <div class="product_name">
-                  <h2>Dota 2</h2>
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_six(this)" src="images/cardslider/dota/dotamain.png" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_six(this)" src="images/cardslider/dota/dotascreenone.webp" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_six(this)" src="images/cardslider/dota/dotascreentwo.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_six(this)" src="images/cardslider/dota/dotascreenthree.jpg" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="product_des">
-                  <p>Available Now</p>
-                </div>
-                <div class="product_btn">
-                  <button class="btn">Add To Cart</button>
+          <!-- Card Slide 5 -->
+          <div class="mySlides fade">
+            <div class="product_card_container">
+              <div class="card_section_left">
+                <img
+                  src="images/cardslider/ac/acmain.jpg"
+                  alt=""
+                  class="card_main_image"
+                  id="card_image_container_five"
+                />
+              </div>
+              <div class="card_section_right">
+                <div class="card_info">
+                  <div class="product_name">
+                    <h2>Assassins Creed: Valhalla</h2>
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_five(this)"
+                      src="images/cardslider/ac/acmain.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_five(this)"
+                      src="images/cardslider/ac/acscreenone.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_five(this)"
+                      src="images/cardslider/ac/acscreentwo.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_five(this)"
+                      src="images/cardslider/ac/acscreenthree.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="product_des">
+                    <p>Available Now</p>
+                  </div>
+                  <div class="product_btn">
+                    <button class="btn">Add To Cart</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card Slide 7 -->
-        <div class="mySlides fade">
-          <div class="product_card_container">
-            <div class="card_section_left">
-              <img src="images/cardslider/shatterline/shatterlinemain.jpg" alt="" class="card_main_image"
-                id="card_image_container_seven" />
-            </div>
-            <div class="card_section_right">
-              <div class="card_info">
-                <div class="product_name">
-                  <h2>Shatterline</h2>
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_seven(this)" src="images/cardslider/shatterline/shatterlinemain.jpg"
-                    alt="" class="nav_image" />
-                  <img onmouseover="change_img_seven(this)" src="images/cardslider/shatterline/shatterscreeonone.jpg"
-                    alt="" class="nav_image" />
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_seven(this)" src="images/cardslider/shatterline/shatterscreentwo.jpg"
-                    alt="" class="nav_image" />
-                  <img onmouseover="change_img_seven(this)" src="images/cardslider/shatterline/shatterscreenthree.jpg"
-                    alt="" class="nav_image" />
-                </div>
-                <div class="product_des">
-                  <p>Available Now</p>
-                </div>
-                <div class="product_btn">
-                  <button class="btn">Add To Cart</button>
+          <!-- Card Slide 6 -->
+          <div class="mySlides fade">
+            <div class="product_card_container">
+              <div class="card_section_left">
+                <img
+                  src="images/cardslider/dota/dotamain.png"
+                  alt=""
+                  class="card_main_image"
+                  id="card_image_container_six"
+                />
+              </div>
+              <div class="card_section_right">
+                <div class="card_info">
+                  <div class="product_name">
+                    <h2>Dota 2</h2>
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_six(this)"
+                      src="images/cardslider/dota/dotamain.png"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_six(this)"
+                      src="images/cardslider/dota/dotascreenone.webp"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_six(this)"
+                      src="images/cardslider/dota/dotascreentwo.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_six(this)"
+                      src="images/cardslider/dota/dotascreenthree.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="product_des">
+                    <p>Available Now</p>
+                  </div>
+                  <div class="product_btn">
+                    <button class="btn">Add To Cart</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card Slide 8 -->
-        <div class="mySlides fade">
-          <div class="product_card_container">
-            <div class="card_section_left">
-              <img src="images/cardslider/ixion/ixionmain.jpg" alt="" class="card_main_image"
-                id="card_image_container_eight" />
-            </div>
-            <div class="card_section_right">
-              <div class="card_info">
-                <div class="product_name">
-                  <h2>Ixion</h2>
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_eight(this)" src="images/cardslider/ixion/ixionmain.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_eight(this)" src="images/cardslider/ixion/ixionscreenone.jpg" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="img_nav">
-                  <img onmouseover="change_img_eight(this)" src="images/cardslider/ixion/ixionscreentwo.jpg" alt=""
-                    class="nav_image" />
-                  <img onmouseover="change_img_eight(this)" src="images/cardslider/ixion/ixionscreenthree.webp" alt=""
-                    class="nav_image" />
-                </div>
-                <div class="product_des">
-                  <p>Available Now</p>
-                </div>
-                <div class="product_btn">
-                  <button class="btn">Add To Cart</button>
+          <!-- Card Slide 7 -->
+          <div class="mySlides fade">
+            <div class="product_card_container">
+              <div class="card_section_left">
+                <img
+                  src="images/cardslider/shatterline/shatterlinemain.jpg"
+                  alt=""
+                  class="card_main_image"
+                  id="card_image_container_seven"
+                />
+              </div>
+              <div class="card_section_right">
+                <div class="card_info">
+                  <div class="product_name">
+                    <h2>Shatterline</h2>
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_seven(this)"
+                      src="images/cardslider/shatterline/shatterlinemain.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_seven(this)"
+                      src="images/cardslider/shatterline/shatterscreeonone.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_seven(this)"
+                      src="images/cardslider/shatterline/shatterscreentwo.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_seven(this)"
+                      src="images/cardslider/shatterline/shatterscreenthree.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="product_des">
+                    <p>Available Now</p>
+                  </div>
+                  <div class="product_btn">
+                    <button class="btn">Add To Cart</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br />
-
-      <!-- The dots/circles -->
-      <div class="dots" style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-      </div>
-
-      <!-- Game Award -->
-      <div class="award">
-        <div class="award_inner"></div>
-      </div>
-
-      <!-- Special -->
-      <div class="offertext" id="special">
-        <h2>Special Offers</h2>
-      </div>
-      <div class="special_container">
-        <div class="special spone">
-          <div class="specialcard">
-            <div class="specialimg spimgone"></div>
-            <div class="specialtext">
-              <h2>MIDWEEK MADNESS</h2>
-              <p>Offer Ends 8 Dec @ 10:00pm</p>
-              <p class="specialdeal">-75%</p>
+          <!-- Card Slide 8 -->
+          <div class="mySlides fade">
+            <div class="product_card_container">
+              <div class="card_section_left">
+                <img
+                  src="images/cardslider/ixion/ixionmain.jpg"
+                  alt=""
+                  class="card_main_image"
+                  id="card_image_container_eight"
+                />
+              </div>
+              <div class="card_section_right">
+                <div class="card_info">
+                  <div class="product_name">
+                    <h2>Ixion</h2>
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_eight(this)"
+                      src="images/cardslider/ixion/ixionmain.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_eight(this)"
+                      src="images/cardslider/ixion/ixionscreenone.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="img_nav">
+                    <img
+                      onmouseover="change_img_eight(this)"
+                      src="images/cardslider/ixion/ixionscreentwo.jpg"
+                      alt=""
+                      class="nav_image"
+                    />
+                    <img
+                      onmouseover="change_img_eight(this)"
+                      src="images/cardslider/ixion/ixionscreenthree.webp"
+                      alt=""
+                      class="nav_image"
+                    />
+                  </div>
+                  <div class="product_des">
+                    <p>Available Now</p>
+                  </div>
+                  <div class="product_btn">
+                    <button class="btn">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="special sptwo">
-          <div class="specialcard">
-            <div class="specialimg spimgtwo"></div>
-            <div class="specialtext">
-              <h2>MIDWEEK MADNESS</h2>
-              <p>Offer Ends 8 Dec @ 10:00pm</p>
-              <p class="specialdeal">-75%</p>
-            </div>
-          </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div class="dots" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
         </div>
-        <div class="special spthree">
-          <div class="specialthreetop">
+
+        <!-- Game Award -->
+        <div class="award">
+          <div class="award_inner"></div>
+        </div>
+
+        <!-- Special -->
+        <div class="offertext" id="special">
+          <h2>Special Offers</h2>
+        </div>
+        <div class="special_container">
+          <div class="special spone">
             <div class="specialcard">
-              <div class="specialtopimg"></div>
-              <div class="specialtext">
-                <h2>MIDWEEK MADNESS</h2>
-                <p>Offer Ends 8 Dec @ 10:00pm</p>
-                <div class="specialdeal">
-                  <p>-75%</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="specialthreebot">
-            <div class="specialcard">
-              <div class="specialbotimg"></div>
+              <div class="specialimg spimgone"></div>
               <div class="specialtext">
                 <h2>MIDWEEK MADNESS</h2>
                 <p>Offer Ends 8 Dec @ 10:00pm</p>
@@ -376,79 +671,64 @@
               </div>
             </div>
           </div>
+          <div class="special sptwo">
+            <div class="specialcard">
+              <div class="specialimg spimgtwo"></div>
+              <div class="specialtext">
+                <h2>MIDWEEK MADNESS</h2>
+                <p>Offer Ends 8 Dec @ 10:00pm</p>
+                <p class="specialdeal">-75%</p>
+              </div>
+            </div>
+          </div>
+          <div class="special spthree">
+            <div class="specialthreetop">
+              <div class="specialcard">
+                <div class="specialtopimg"></div>
+                <div class="specialtext">
+                  <h2>MIDWEEK MADNESS</h2>
+                  <p>Offer Ends 8 Dec @ 10:00pm</p>
+                  <div class="specialdeal">
+                    <p>-75%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="specialthreebot">
+              <div class="specialcard">
+                <div class="specialbotimg"></div>
+                <div class="specialtext">
+                  <h2>MIDWEEK MADNESS</h2>
+                  <p>Offer Ends 8 Dec @ 10:00pm</p>
+                  <p class="specialdeal">-75%</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- New And Trending -->
-      <div class="trending_container">
-        <div class="trending_text" id="trending">
-          <h2>New & trending</h2>
-        </div>
-        <div class="trending_row_one">
-          <div class="trending_card">
-            <div class="trending_img trending_one"></div>
-            <div class="trending_card_text">
-              <p class="trending_header">The Witcher</p>
-              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+      <footer>
+        <section class="footer_inner">
+          <div>
+            <div class="logo"><a href="index.html">Donte</a></div>
           </div>
-          <div class="trending_card">
-            <div class="trending_img trending_two"></div>
-            <div class="trending_card_text">
-              <p class="trending_header">Cyberpunk 2077</p>
-              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+          <div class="footer_paragraph">
+            <p>
+              © 2022 Donte Corporation. All rights reserved. All trademarks are
+              property of their respective owners in the US and other countries.
+              VAT included in all prices where applicable
+            </p>
           </div>
-          <div class="trending_card">
-            <div class="trending_img trending_three"></div>
-            <div class="trending_card_text">
-              <p class="trending_header">Elden Ring</p>
-              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+          <div class="footer_logo">
+            <i class="fa-solid fa-gamepad fa-3x"></i>
           </div>
-          <div class="trending_card">
-            <div class="trending_img trending_four"></div>
-            <div class="trending_card_text">
-              <p class="trending_header">FarCry 6</p>
-              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="trending_card">
-            <div class="trending_img trending_five"></div>
-            <div class="trending_card_text">
-              <p class="trending_header">Destiny 2</p>
-              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="trending_row_two">
-          <div class="trending_card"></div>
-          <div class="trending_card"></div>
-          <div class="trending_card"></div>
-          <div class="trending_card"></div>
-          <div class="trending_card"></div>
-          <div class="trending_card"></div>
-        </div>
+          <div></div>
+        </section>
+      </footer>
+      <div class="loader">
+        <p><i class="fa-solid fa-gamepad fa-3x"></i></p>
       </div>
     </div>
-    <footer>
-      <section class="footer_inner">
-        <div>
-          <div class="logo"><a href="index.html">Donte</a></div>
-        </div>
-        <div class="footer_paragraph">
-          <p>© 2022 Donte Corporation. All rights reserved. All trademarks are property of their respective owners in
-            the US and other countries.
-            VAT included in all prices where applicable</p>
-        </div>
-        <div class="footer_logo"><i class="fa-solid fa-gamepad fa-3x"></i></div>
-        <div></div>
-      </section>
-    </footer>
-    <div class="loader">
-      <p><i class="fa-solid fa-gamepad fa-3x"></i></p>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
